@@ -1,0 +1,35 @@
+.card {
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+  background-color: $warning;
+  border: 2px solid $warning;
+}
+
+.card_category {
+  max-width: 200px;
+  margin: 10px;
+}
+
+.card__link {
+  color: white;
+  text-decoration: none;
+}
+
+.card__link:hover .card__image img {
+  transform: scale(1.1);
+}
+
+.card__image {
+  overflow: hidden;
+}
+
+.card__image img {
+  width: 100%;
+  transition: transform $transition;
+}
+
+.card__title {
+  font-size: 18px;
+  padding: 10px;
+}

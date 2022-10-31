@@ -1,5 +1,11 @@
 import { createApp } from "vue";
-import App from "./App.vue";
+import { createPinia } from "pinia";
+
+import AxiosPlugin from "@/plugins/axios";
+import TheApp from "@/components/TheApp.vue";
+
 import router from "./router";
 
-createApp(App).use(router).mount("#app");
+import "@/scss/app.scss";
+
+createApp(TheApp).use(router).use(createPinia()).use(AxiosPlugin).mount("#app");

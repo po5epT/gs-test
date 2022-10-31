@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  color: $secondary;
+}
+
+a {
+  color: $primary;
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas:
+    'header'
+    'main';
+
+  height: 100vh;
+}
+
+.main {
+  grid-area: main;
+  padding: $container-padding;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-weight: 600;
+}

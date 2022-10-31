@@ -1,0 +1,30 @@
+.page {
+  width: 100%;
+}
+
+.page__title {
+  text-align: center;
+}
+
+.page__content {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  column-gap: 30px;
+}
+
+.page__content p:first-child {
+  margin-top: 0;
+}
+
+.page__image img {
+  width: 100%;
+}
+
+.page__button {
+  margin-top: 20px;
+}
+
+
+
+
+

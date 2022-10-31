@@ -1,0 +1,52 @@
+.header {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr minmax($min-width, $max-width) 1fr;
+  background: $success;
+  color: white;
+  padding: $container-padding;
+  box-shadow: 0 -8px 8px 8px $secondary;
+
+  &__nav {
+    grid-column: 2 / 3;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    color: white;
+    display: block;
+    padding: 8px 12px;
+    font-size: 24px;
+    font-weight: 500;
+    text-decoration: none;
+    background: transparent;
+    transition: background $transition;
+    border-radius: $border-radius;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-link__count {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 0;
+  background: $danger;
+  border-radius: 50rem;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+}

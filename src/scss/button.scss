@@ -1,0 +1,33 @@
+.button {
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  border-radius: $border-radius;
+  padding: 6px 12px;
+  transition: background-color $transition;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button_success,
+.button_danger {
+  color: white;
+}
+
+.button_success {
+  background: $success;
+}
+
+.button_success:hover {
+  background: rgba($success , 0.75);
+}
+
+.button_danger {
+  background: $danger;
+}
+
+.button_danger:hover {
+  background: rgba($danger , 0.75);
+}
